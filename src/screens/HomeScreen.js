@@ -3,7 +3,6 @@ import BookItem from '../components/BookItem'
 import { View, FlatList, SafeAreaView } from 'react-native'
 import axios from 'axios'
 
-
 export default class HomeScreen extends Component {
     constructor(props) {
         super(props)

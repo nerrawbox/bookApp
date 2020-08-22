@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from 'react'
-import HomeScreen from './src/screens/HomeScreen'
+import AppNavigator from './navigation/AppNavigator'
 
 export default class App extends Component {
   render() {
     return (
       <Fragment>
-        <HomeScreen />
+        <AppNavigator />
       </Fragment>
     )
   }
