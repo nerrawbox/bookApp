@@ -16,7 +16,7 @@ export default class BookItem extends Component {
     componentDidMount() {
         this.setState({
             title: this.props.data.split('\n')[0],
-            body: this.props.data.split('\n').filter((value, index) => 0 !== index)
+            body: this.props.data.split('\n').filter(index => 0 !== index)
         })
     }
 

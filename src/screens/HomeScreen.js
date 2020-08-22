@@ -25,7 +25,6 @@ export default class HomeScreen extends Component {
     }
 
     handleBookPress = (data) => {
-        console.log(data.title)
         this.props.navigation.navigate('Book', { data })
     }
 
@@ -36,7 +35,7 @@ export default class HomeScreen extends Component {
                     <FlatList
                         data={this.state.books}
                         keyExtractor={(item) => item.id}
-                        renderItem={({ item, index }) => (
+                        renderItem={({ item }) => (
                             <BookItem
                                 data={item.data}
                                 handleBookPress={this.handleBookPress}
