@@ -26,6 +26,7 @@ export default class HomeScreen extends Component {
 
     handleBookPress = (data) => {
         console.log(data.title)
+        this.props.navigation.navigate('Book', { data })
     }
 
     render() {
